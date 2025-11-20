@@ -20,8 +20,6 @@ export default function Home() {
       <Stats />
       <Alliances />
       <About />
-
-      <Testimonials />
       <News />
       <Contact />
       <Footer />
