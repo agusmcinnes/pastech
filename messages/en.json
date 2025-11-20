@@ -28,6 +28,10 @@
       "intelligent": {
         "title": "Smart Grazing",
         "description": "Optimization with artificial intelligence"
+      },
+      "grazingManagement": {
+        "title": "Grazing Management",
+        "description": "Comprehensive management platform"
       }
     }
   },
@@ -39,17 +43,11 @@
     "cta": "Start Free"
   },
   "about": {
-    "badge": "Innovation Based on Scientific Knowledge",
-    "description": "We are a conversion and positioning platform that seeks to reflect the technological, scientific, and business level of the brand.",
-    "mission": {
-      "title": "Mission",
-      "content": "We develop technological innovation for the sustainable management of vegetation cover in agricultural production systems. We improve productivity and minimize environmental impact."
-    },
-    "vision": {
-      "title": "Vision",
-      "content": "We will consolidate ourselves as scientific-technological leaders for the sustainable management of terrestrial ecosystems, leading innovation for environmentally friendly production."
-    },
-    "tool": "A precise tool to optimize pasture management and improve productivity."
+    "title": "Our Approach",
+    "paragraph1": "At Pastech, we believe that the future of livestock farming is built with information, commitment, and collaboration.",
+    "paragraph2": "That's why we unite science, technology, and the experience of producers to transform the way pasture is managed.",
+    "paragraph3": "Our purpose is to accompany producers in every decision, offering precise, simple, and validated tools that turn data into knowledge and knowledge into more efficient, sustainable, and humane production.",
+    "paragraph4": "We are a team that works from the field and for the field, convinced that measuring well means producing better."
   },
   "features": {
     "title": "Our Process",
@@ -71,6 +69,7 @@
     "title": "Our Solutions",
     "subtitle": "Integrated tools for every stage of the production cycle, from measurement to decision-making.",
     "learnMore": "Learn More",
+    "contact": "Contact Us",
     "pasturometer": {
       "title": "Pasturometer",
       "description": "High-precision measurement device to record grass height and density in real time."
@@ -86,7 +85,52 @@
     "intelligent": {
       "title": "Smart Grazing",
       "description": "AI algorithms that suggest optimal rotations based on historical and current data."
+    },
+    "grazingManagement": {
+      "title": "Intelligent Grazing Management",
+      "description": "Comprehensive platform that centralizes all your field data for strategic and efficient decision-making."
+    },
+    "detail": {
+      "backToSolutions": "Back to Solutions",
+      "features": "Features",
+      "benefits": "Benefits",
+      "contact": "Request information",
+      "pasturometer": {
+        "longDescription": "The Pasturometer is a state-of-the-art electronic device designed to precisely measure grass height and density in real time. It allows producers to make decisions based on concrete data.",
+        "features": ["High-precision ultrasonic measurement", "Bluetooth and WiFi connectivity", "Mobile app with cloud sync", "Long-lasting battery", "Water and dust resistant"],
+        "benefits": ["Eliminates manual measurement errors", "Optimizes stocking rate", "Reduces overgrazing", "Improves productivity up to 25%"]
+      },
+      "satellite": {
+        "longDescription": "Pastech Satellite uses state-of-the-art satellite imagery to monitor large areas of land, detect anomalies, and analyze pasture evolution over time.",
+        "features": ["High-resolution multispectral imagery", "Automatic NDVI analysis", "Anomaly alerts", "Historical data", "Large surface coverage"],
+        "benefits": ["Remote monitoring without field visits", "Early problem detection", "Data-driven strategic planning", "Reduced operational costs"]
+      },
+      "drone": {
+        "longDescription": "Pastech Drone offers detailed aerial surveys for hard-to-access areas, generating high-resolution maps and 3D terrain models for precise management.",
+        "features": ["Programmable autonomous flights", "Multispectral camera", "Orthomosaic map generation", "Digital elevation models", "Biomass analysis"],
+        "benefits": ["Access to difficult areas", "Greater detail than satellite imagery", "Flexible flight frequency", "On-demand updated data"]
+      },
+      "intelligent": {
+        "longDescription": "The Smart Grazing system uses artificial intelligence algorithms to analyze historical and current data, suggesting optimal rotations that maximize productivity.",
+        "features": ["Machine learning algorithms", "Personalized recommendations", "Weather data integration", "Growth prediction", "Interactive dashboard"],
+        "benefits": ["Maximizes pasture utilization", "Reduces waste", "Optimizes rotation cycles", "Data science-driven decisions"]
+      },
+      "grazingManagement": {
+        "longDescription": "The Intelligent Grazing Management platform centralizes all your field data in one place, enabling a comprehensive view and strategic, efficient decision-making.",
+        "features": ["Centralized dashboard", "Integration with all Pastech solutions", "Custom reports", "Data export", "Multi-user access"],
+        "benefits": ["360° view of your establishment", "Informed decision-making", "Complete traceability", "Continuous data-driven improvement"]
+      }
     }
+  },
+  "stats": {
+    "hectares": "hectares monitored",
+    "users": "active users",
+    "efficiency": "improvement in forage efficiency",
+    "animals": "animals grazing"
+  },
+  "alliances": {
+    "title": "Strategic Alliances",
+    "description": "Pastech works with institutions, universities, and companies that drive innovation in agriculture."
   },
   "testimonials": {
     "title": "What Our Clients Say",
@@ -159,6 +203,7 @@
     "satellite": "Pastech Satellite",
     "drone": "Pastech Drone",
     "intelligent": "Smart Grazing",
+    "grazingManagement": "Grazing Management",
     "about": "About Us",
     "testimonials": "Testimonials",
     "news": "News",

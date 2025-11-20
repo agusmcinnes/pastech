@@ -28,6 +28,10 @@
       "intelligent": {
         "title": "Pastoreo Inteligente",
         "description": "Optimización con inteligencia artificial"
+      },
+      "grazingManagement": {
+        "title": "Gestión de Pastoreo",
+        "description": "Plataforma integral de gestión"
       }
     }
   },
@@ -39,17 +43,11 @@
     "cta": "Comenzá gratis"
   },
   "about": {
-    "badge": "Innovación basada en conocimiento científico",
-    "description": "Somos una plataforma de conversión y posicionamiento que busca reflejar el nivel tecnológico, científico y empresarial de la marca.",
-    "mission": {
-      "title": "Misión",
-      "content": "Desarrollamos innovación tecnológica para el manejo sustentable de cubiertas vegetales en sistemas de producción agropecuaria. Mejoramos la productividad y minimizamos el impacto ambiental."
-    },
-    "vision": {
-      "title": "Visión",
-      "content": "Nos consolidaremos como referentes científico-tecnológico para el manejo sostenible de ecosistemas terrestres, liderando la innovación para una producción amigable con el medio ambiente."
-    },
-    "tool": "Una herramienta precisa para optimizar la gestión del pasto y mejorar la productividad."
+    "title": "Nuestro enfoque",
+    "paragraph1": "En Pastech creemos que el futuro de la ganadería se construye con información, compromiso y colaboración.",
+    "paragraph2": "Por eso unimos la ciencia, la tecnología y la experiencia de quienes producen para transformar la manera en que se gestiona el pasto.",
+    "paragraph3": "Nuestro propósito es acompañar al productor en cada decisión, ofreciendo herramientas precisas, simples y validadas, que convierten los datos en conocimiento y el conocimiento en una producción más eficiente, sustentable y humana.",
+    "paragraph4": "Somos un equipo que trabaja desde el campo y para el campo, convencido de que medir bien es producir mejor."
   },
   "features": {
     "title": "Nuestro proceso",
@@ -71,6 +69,7 @@
     "title": "Nuestras Soluciones",
     "subtitle": "Herramientas integradas para cada etapa del ciclo productivo, desde la medición hasta la toma de decisiones.",
     "learnMore": "Saber más",
+    "contact": "Contáctanos",
     "pasturometer": {
       "title": "Pasturometro",
       "description": "Dispositivo de medición de alta precisión para registrar la altura y densidad del pasto en tiempo real."
@@ -86,7 +85,52 @@
     "intelligent": {
       "title": "Pastoreo Inteligente",
       "description": "Algoritmos de IA que sugieren rotaciones óptimas basadas en datos históricos y actuales."
+    },
+    "grazingManagement": {
+      "title": "Gestión Inteligente de Pastoreo",
+      "description": "Plataforma integral que centraliza todos los datos de tu campo para una toma de decisiones estratégica y eficiente."
+    },
+    "detail": {
+      "backToSolutions": "Volver a Soluciones",
+      "features": "Características",
+      "benefits": "Beneficios",
+      "contact": "Solicitar información",
+      "pasturometer": {
+        "longDescription": "El Pasturómetro es un dispositivo electrónico de última generación diseñado para medir con precisión la altura y densidad del pasto en tiempo real. Permite a los productores tomar decisiones basadas en datos concretos.",
+        "features": ["Medición ultrasónica de alta precisión", "Conectividad Bluetooth y WiFi", "App móvil con sincronización en la nube", "Batería de larga duración", "Resistente al agua y polvo"],
+        "benefits": ["Elimina errores de medición manual", "Optimiza la carga animal", "Reduce el sobrepastoreo", "Mejora la productividad hasta un 25%"]
+      },
+      "satellite": {
+        "longDescription": "Pastech Satelital utiliza imágenes de satélite de última generación para monitorear grandes extensiones de terreno, detectar anomalías y analizar la evolución del pasto a lo largo del tiempo.",
+        "features": ["Imágenes multiespectrales de alta resolución", "Análisis NDVI automático", "Alertas de anomalías", "Histórico de datos", "Cobertura de grandes superficies"],
+        "benefits": ["Monitoreo remoto sin necesidad de recorrer el campo", "Detección temprana de problemas", "Planificación estratégica basada en datos", "Reducción de costos operativos"]
+      },
+      "drone": {
+        "longDescription": "Pastech Dron ofrece relevamiento aéreo detallado para zonas de difícil acceso, generando mapas de alta resolución y modelos 3D del terreno para una gestión precisa.",
+        "features": ["Vuelos autónomos programables", "Cámara multiespectral", "Generación de mapas ortomosaicos", "Modelos de elevación digital", "Análisis de biomasa"],
+        "benefits": ["Acceso a zonas difíciles", "Mayor detalle que imágenes satelitales", "Flexibilidad en la frecuencia de vuelos", "Datos actualizados bajo demanda"]
+      },
+      "intelligent": {
+        "longDescription": "El sistema de Pastoreo Inteligente utiliza algoritmos de inteligencia artificial para analizar datos históricos y actuales, sugiriendo rotaciones óptimas que maximizan la productividad.",
+        "features": ["Algoritmos de machine learning", "Recomendaciones personalizadas", "Integración con datos climáticos", "Predicción de crecimiento", "Dashboard interactivo"],
+        "benefits": ["Maximiza el aprovechamiento del pasto", "Reduce el desperdicio", "Optimiza los ciclos de rotación", "Decisiones basadas en ciencia de datos"]
+      },
+      "grazingManagement": {
+        "longDescription": "La plataforma de Gestión Inteligente de Pastoreo centraliza todos los datos de tu campo en un solo lugar, permitiendo una visión integral y una toma de decisiones estratégica y eficiente.",
+        "features": ["Dashboard centralizado", "Integración con todas las soluciones Pastech", "Reportes personalizados", "Exportación de datos", "Acceso multi-usuario"],
+        "benefits": ["Visión 360° del establecimiento", "Toma de decisiones informada", "Trazabilidad completa", "Mejora continua basada en datos"]
+      }
     }
+  },
+  "stats": {
+    "hectares": "hectáreas monitoreadas",
+    "users": "usuarios activos",
+    "efficiency": "mejora en eficiencia forrajera",
+    "animals": "animales pastoreando"
+  },
+  "alliances": {
+    "title": "Alianzas estratégicas",
+    "description": "Pastech trabaja junto a instituciones, universidades y empresas que impulsan la innovación en el agro."
   },
   "testimonials": {
     "title": "Lo que dicen nuestros clientes",
@@ -159,6 +203,7 @@
     "satellite": "Pastech Satelital",
     "drone": "Pastech Dron",
     "intelligent": "Pastoreo Inteligente",
+    "grazingManagement": "Gestión de Pastoreo",
     "about": "Nosotros",
     "testimonials": "Testimonios",
     "news": "Novedades",

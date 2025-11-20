@@ -4,6 +4,8 @@ import { Partners } from "@/components/partners"
 import { Features } from "@/components/features"
 import { About } from "@/components/about"
 import { Solutions } from "@/components/solutions"
+import { Stats } from "@/components/stats"
+import { Alliances } from "@/components/alliances"
 import { Testimonials } from "@/components/testimonials"
 import { News } from "@/components/news"
 import { Contact } from "@/components/contact"
@@ -14,10 +16,11 @@ export default function Home() {
     <main className="min-h-screen bg-background text-foreground selection:bg-primary selection:text-primary-foreground overflow-x-hidden">
       <Header />
       <Hero />
-      <Partners />
-      <Features />
-      <About />
       <Solutions />
+      <Stats />
+      <Alliances />
+      <About />
+
       <Testimonials />
       <News />
       <Contact />
