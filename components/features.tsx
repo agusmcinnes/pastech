@@ -2,32 +2,35 @@
 
 import { Activity, BarChart3, Sprout } from 'lucide-react'
 import { motion } from 'framer-motion'
-
-const features = [
-  {
-    number: "01",
-    title: "Medición",
-    description: "Dispositivo electrónico de medición de pasto que facilita la toma de datos precisos en campo, eliminando errores manuales.",
-    icon: Activity,
-    color: "primary"
-  },
-  {
-    number: "02",
-    title: "Monitoreo",
-    description: "Monitoreo remoto del stock de pasto. Brindamos el dato exacto para que conozcas la disponibilidad forrajera en tiempo real.",
-    icon: BarChart3,
-    color: "secondary"
-  },
-  {
-    number: "03",
-    title: "Gestión",
-    description: "Gestión integral en establecimientos ganaderos. Transformamos la información en decisiones para optimizar el aprovechamiento.",
-    icon: Sprout,
-    color: "accent"
-  }
-]
+import { useTranslations } from 'next-intl'
 
 export function Features() {
+  const t = useTranslations('features')
+
+  const features = [
+    {
+      number: "01",
+      title: t('measurement.title'),
+      description: t('measurement.description'),
+      icon: Activity,
+      color: "primary"
+    },
+    {
+      number: "02",
+      title: t('monitoring.title'),
+      description: t('monitoring.description'),
+      icon: BarChart3,
+      color: "secondary"
+    },
+    {
+      number: "03",
+      title: t('management.title'),
+      description: t('management.description'),
+      icon: Sprout,
+      color: "accent"
+    }
+  ]
+
   return (
     <section className="py-24 bg-background relative overflow-hidden">
       {/* Background decoration */}
@@ -43,10 +46,10 @@ export function Features() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
-            Nuestro proceso
+            {t('title')}
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Tres pilares que transforman la gestión de tu campo
+            {t('subtitle')}
           </p>
         </motion.div>
 

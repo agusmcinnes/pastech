@@ -1,8 +1,13 @@
-import Link from "next/link"
+"use client"
+
+import { Link } from "@/i18n/navigation"
 import Image from "next/image"
 import { Facebook, Instagram, Linkedin, Twitter } from 'lucide-react'
+import { useTranslations } from 'next-intl'
 
 export function Footer() {
+  const t = useTranslations('footer')
+
   return (
     <footer className="bg-background border-t border-border py-12">
       <div className="container px-4 md:px-6">
@@ -19,63 +24,62 @@ export function Footer() {
               </div>
             </Link>
             <p className="text-muted-foreground max-w-sm">
-              Tecnología para gestionar el pasto con precisión. Transformamos datos en decisiones productivas y
-              sustentables.
+              {t('description')}
             </p>
           </div>
           <div>
-            <h3 className="font-bold text-white mb-4">Soluciones</h3>
+            <h3 className="font-bold text-white mb-4">{t('solutions')}</h3>
             <ul className="space-y-2">
               <li>
                 <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                  Pasturometro
+                  {t('pasturometer')}
                 </Link>
               </li>
               <li>
                 <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                  Pastech Satelital
+                  {t('satellite')}
                 </Link>
               </li>
               <li>
                 <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                  Pastech Dron
+                  {t('drone')}
                 </Link>
               </li>
               <li>
                 <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                  Pastoreo Inteligente
+                  {t('intelligent')}
                 </Link>
               </li>
             </ul>
           </div>
           <div>
-            <h3 className="font-bold text-white mb-4">Empresa</h3>
+            <h3 className="font-bold text-white mb-4">{t('company')}</h3>
             <ul className="space-y-2">
               <li>
                 <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                  Nosotros
+                  {t('about')}
                 </Link>
               </li>
               <li>
                 <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                  Testimonios
+                  {t('testimonials')}
                 </Link>
               </li>
               <li>
                 <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                  Novedades
+                  {t('news')}
                 </Link>
               </li>
               <li>
                 <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                  Contacto
+                  {t('contact')}
                 </Link>
               </li>
             </ul>
           </div>
         </div>
         <div className="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-sm text-muted-foreground">© 2025 Pastech. Todos los derechos reservados.</p>
+          <p className="text-sm text-muted-foreground">{t('copyright')}</p>
           <div className="flex gap-4">
             <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
               <Instagram className="w-5 h-5" />

@@ -1,49 +1,52 @@
 "use client"
 
 import * as React from "react"
-import Link from "next/link"
+import { Link } from "@/i18n/navigation"
 import Image from "next/image"
 import { Menu, X, Ruler, Satellite, Plane, Brain, ChevronDown } from 'lucide-react'
-import { Button } from "@/components/ui/button"
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
-
-const solutions = [
-  {
-    title: "Pasturómetro",
-    href: "#pasturometro",
-    description: "Medición precisa de altura y densidad del pasto",
-    icon: Ruler,
-  },
-  {
-    title: "Pastech Satelital",
-    href: "#satelital",
-    description: "Monitoreo mediante imágenes satelitales",
-    icon: Satellite,
-  },
-  {
-    title: "Pastech Dron",
-    href: "#dron",
-    description: "Análisis con vuelos autónomos y mapeo",
-    icon: Plane,
-  },
-  {
-    title: "Pastoreo Inteligente",
-    href: "#inteligente",
-    description: "Optimización con inteligencia artificial",
-    icon: Brain,
-  },
-]
+import { LanguageSelector } from "@/components/language-selector"
+import { useTranslations } from 'next-intl'
 
 export function Header() {
   const [isOpen, setIsOpen] = React.useState(false)
   const [isScrolled, setIsScrolled] = React.useState(false)
   const [solutionsOpen, setSolutionsOpen] = React.useState(false)
   const closeTimeoutRef = React.useRef<NodeJS.Timeout | null>(null)
+
+  const t = useTranslations('header')
+
+  const solutions = [
+    {
+      title: t('solutionsMenu.pasturometer.title'),
+      href: "#pasturometro",
+      description: t('solutionsMenu.pasturometer.description'),
+      icon: Ruler,
+    },
+    {
+      title: t('solutionsMenu.satellite.title'),
+      href: "#satelital",
+      description: t('solutionsMenu.satellite.description'),
+      icon: Satellite,
+    },
+    {
+      title: t('solutionsMenu.drone.title'),
+      href: "#dron",
+      description: t('solutionsMenu.drone.description'),
+      icon: Plane,
+    },
+    {
+      title: t('solutionsMenu.intelligent.title'),
+      href: "#inteligente",
+      description: t('solutionsMenu.intelligent.description'),
+      icon: Brain,
+    },
+  ]
 
   const handleMouseEnter = () => {
     if (closeTimeoutRef.current) {
@@ -93,17 +96,17 @@ export function Header() {
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-1">
             <Link href="/" className="px-4 py-2 text-sm font-medium text-white/80 hover:text-primary transition-colors rounded-md hover:bg-white/5">
-              Home
+              {t('home')}
             </Link>
 
             <DropdownMenu modal={false} open={solutionsOpen} onOpenChange={setSolutionsOpen}>
               <div
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
-                
+
               >
                 <DropdownMenuTrigger className="flex items-center gap-1 px-4 py-2 text-sm font-medium text-white/80 hover:text-primary transition-colors outline-none rounded-md hover:bg-white/5 cursor-pointer">
-                  Soluciones <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${solutionsOpen ? 'rotate-180' : ''}`} />
+                  {t('solutions')} <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${solutionsOpen ? 'rotate-180' : ''}`} />
                 </DropdownMenuTrigger>
                 <DropdownMenuContent
                   align="start"
@@ -128,31 +131,29 @@ export function Header() {
             </DropdownMenu>
 
             <Link href="#testimonios" className="px-4 py-2 text-sm font-medium text-white/80 hover:text-primary transition-colors rounded-md hover:bg-white/5">
-              Testimonios
+              {t('testimonials')}
             </Link>
 
             <Link href="#nosotros" className="px-4 py-2 text-sm font-medium text-white/80 hover:text-primary transition-colors rounded-md hover:bg-white/5">
-              Nosotros
+              {t('about')}
             </Link>
 
             <Link href="#alianzas" className="px-4 py-2 text-sm font-medium text-white/80 hover:text-primary transition-colors rounded-md hover:bg-white/5">
-              Comunidad
+              {t('community')}
             </Link>
 
             <Link href="#novedades" className="px-4 py-2 text-sm font-medium text-white/80 hover:text-primary transition-colors rounded-md hover:bg-white/5">
-              Novedades
+              {t('news')}
             </Link>
 
             <Link href="#contacto" className="px-4 py-2 text-sm font-medium text-white/80 hover:text-primary transition-colors rounded-md hover:bg-white/5">
-              Contacto
+              {t('contact')}
             </Link>
           </nav>
 
-          {/* CTA Button */}
+          {/* Language Selector */}
           <div className="hidden lg:block">
-            <Button className="bg-primary text-primary-foreground hover:bg-primary/90 font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/25">
-              Comenzá gratis
-            </Button>
+            <LanguageSelector />
           </div>
 
           {/* Mobile Menu Button */}
@@ -172,13 +173,13 @@ export function Header() {
                 className="text-lg font-medium text-white hover:text-primary py-3 transition-colors"
                 onClick={() => setIsOpen(false)}
               >
-                Home
+                {t('home')}
               </Link>
 
               {/* Soluciones Mobile Accordion */}
               <div className="flex flex-col gap-2">
                 <div className="flex items-center gap-2 text-lg font-medium text-white py-3">
-                  Soluciones
+                  {t('solutions')}
                 </div>
                 <div className="flex flex-col gap-1 pl-4 border-l-2 border-primary/50">
                   {solutions.map((solution) => (
@@ -200,42 +201,40 @@ export function Header() {
                 className="text-lg font-medium text-white hover:text-primary py-3 transition-colors"
                 onClick={() => setIsOpen(false)}
               >
-                Testimonios
+                {t('testimonials')}
               </Link>
               <Link
                 href="#nosotros"
                 className="text-lg font-medium text-white hover:text-primary py-3 transition-colors"
                 onClick={() => setIsOpen(false)}
               >
-                Nosotros
+                {t('about')}
               </Link>
               <Link
                 href="#alianzas"
                 className="text-lg font-medium text-white hover:text-primary py-3 transition-colors"
                 onClick={() => setIsOpen(false)}
               >
-                Comunidad / Alianzas
+                {t('communityAlliances')}
               </Link>
               <Link
                 href="#novedades"
                 className="text-lg font-medium text-white hover:text-primary py-3 transition-colors"
                 onClick={() => setIsOpen(false)}
               >
-                Novedades
+                {t('news')}
               </Link>
               <Link
                 href="#contacto"
                 className="text-lg font-medium text-white hover:text-primary py-3 transition-colors"
                 onClick={() => setIsOpen(false)}
               >
-                Contacto
+                {t('contact')}
               </Link>
             </nav>
 
             <div className="mt-8">
-              <Button className="cursor-pointer w-full bg-primary text-primary-foreground hover:bg-primary/90 font-semibold py-6 text-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/25">
-                Comenzá gratis
-              </Button>
+              <LanguageSelector />
             </div>
           </div>
         </div>

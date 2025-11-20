@@ -2,8 +2,11 @@
 
 import { CheckCircle2 } from 'lucide-react'
 import { motion } from "framer-motion"
+import { useTranslations } from 'next-intl'
 
 export function About() {
+  const t = useTranslations('about')
+
   return (
     <section id="nosotros" className="py-24 bg-muted/30">
       <div className="container px-4 md:px-6">
@@ -17,32 +20,29 @@ export function About() {
           >
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                Innovación basada en <span className="text-primary">conocimiento científico</span>
+                {t('badge')}
               </h2>
               <p className="text-muted-foreground text-lg leading-relaxed">
-                Somos una plataforma de conversión y posicionamiento que busca reflejar el nivel tecnológico, científico y
-                empresarial de la marca.
+                {t('description')}
               </p>
             </div>
 
             <div className="space-y-6">
               <div className="bg-card p-6 rounded-xl border border-border">
                 <h3 className="text-xl font-bold text-white mb-2 flex items-center gap-2">
-                  <CheckCircle2 className="text-primary h-5 w-5" /> Misión
+                  <CheckCircle2 className="text-primary h-5 w-5" /> {t('mission.title')}
                 </h3>
                 <p className="text-muted-foreground">
-                  Desarrollamos innovación tecnológica para el manejo sustentable de cubiertas vegetales en sistemas de
-                  producción agropecuaria. Mejoramos la productividad y minimizamos el impacto ambiental.
+                  {t('mission.content')}
                 </p>
               </div>
 
               <div className="bg-card p-6 rounded-xl border border-border">
                 <h3 className="text-xl font-bold text-white mb-2 flex items-center gap-2">
-                  <CheckCircle2 className="text-secondary h-5 w-5" /> Visión
+                  <CheckCircle2 className="text-secondary h-5 w-5" /> {t('vision.title')}
                 </h3>
                 <p className="text-muted-foreground">
-                  Nos consolidaremos como referentes científico-tecnológico para el manejo sostenible de ecosistemas
-                  terrestres, liderando la innovación para una producción amigable con el medio ambiente.
+                  {t('vision.content')}
                 </p>
               </div>
             </div>
@@ -64,7 +64,7 @@ export function About() {
               />
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 to-transparent p-8">
                 <p className="text-white font-medium text-lg">
-                  "Una herramienta precisa para optimizar la gestión del pasto y mejorar la productividad."
+                  "{t('tool')}"
                 </p>
               </div>
             </div>

@@ -1,0 +1,174 @@
+{
+  "metadata": {
+    "title": "Pastech | Technology for Precision Pasture Management",
+    "description": "We measure, analyze, and manage pastures with connected tools that transform data into productive and sustainable decisions."
+  },
+  "header": {
+    "home": "Home",
+    "solutions": "Solutions",
+    "testimonials": "Testimonials",
+    "about": "About Us",
+    "community": "Community",
+    "news": "News",
+    "contact": "Contact",
+    "communityAlliances": "Community / Alliances",
+    "solutionsMenu": {
+      "pasturometer": {
+        "title": "Pasturometer",
+        "description": "Precise measurement of grass height and density"
+      },
+      "satellite": {
+        "title": "Pastech Satellite",
+        "description": "Monitoring through satellite imagery"
+      },
+      "drone": {
+        "title": "Pastech Drone",
+        "description": "Analysis with autonomous flights and mapping"
+      },
+      "intelligent": {
+        "title": "Smart Grazing",
+        "description": "Optimization with artificial intelligence"
+      }
+    }
+  },
+  "hero": {
+    "badge": "Innovation in Livestock Management",
+    "title": "Technology for Pasture Management with",
+    "titleHighlight": "Precision.",
+    "description": "We measure, analyze, and manage pastures with connected tools that transform data into productive and sustainable decisions.",
+    "cta": "Start Free"
+  },
+  "about": {
+    "badge": "Innovation Based on Scientific Knowledge",
+    "description": "We are a conversion and positioning platform that seeks to reflect the technological, scientific, and business level of the brand.",
+    "mission": {
+      "title": "Mission",
+      "content": "We develop technological innovation for the sustainable management of vegetation cover in agricultural production systems. We improve productivity and minimize environmental impact."
+    },
+    "vision": {
+      "title": "Vision",
+      "content": "We will consolidate ourselves as scientific-technological leaders for the sustainable management of terrestrial ecosystems, leading innovation for environmentally friendly production."
+    },
+    "tool": "A precise tool to optimize pasture management and improve productivity."
+  },
+  "features": {
+    "title": "Our Process",
+    "subtitle": "Three pillars that transform your field management",
+    "measurement": {
+      "title": "Measurement",
+      "description": "Electronic grass measurement device that facilitates accurate data collection in the field, eliminating manual errors."
+    },
+    "monitoring": {
+      "title": "Monitoring",
+      "description": "Remote monitoring of grass stock. We provide the exact data so you know forage availability in real time."
+    },
+    "management": {
+      "title": "Management",
+      "description": "Comprehensive management in livestock establishments. We transform information into decisions to optimize utilization."
+    }
+  },
+  "solutions": {
+    "title": "Our Solutions",
+    "subtitle": "Integrated tools for every stage of the production cycle, from measurement to decision-making.",
+    "learnMore": "Learn More",
+    "pasturometer": {
+      "title": "Pasturometer",
+      "description": "High-precision measurement device to record grass height and density in real time."
+    },
+    "satellite": {
+      "title": "Pastech Satellite",
+      "description": "Satellite image analysis to monitor large areas of land and detect anomalies."
+    },
+    "drone": {
+      "title": "Pastech Drone",
+      "description": "Detailed aerial survey for hard-to-access areas and high-resolution mapping."
+    },
+    "intelligent": {
+      "title": "Smart Grazing",
+      "description": "AI algorithms that suggest optimal rotations based on historical and current data."
+    }
+  },
+  "testimonials": {
+    "title": "What Our Clients Say",
+    "subtitle": "Producers and advisors who are already transforming their management with Pastech.",
+    "items": {
+      "carlos": {
+        "name": "Carlos Rodríguez",
+        "role": "Livestock Producer",
+        "content": "Since implementing Pastech, we have optimized our stocking rate by 20%. The data precision is impressive."
+      },
+      "maria": {
+        "name": "María González",
+        "role": "Agricultural Engineer",
+        "content": "The satellite tool allows us to monitor fields remotely with incredible ease. It's a game changer for technical consulting."
+      },
+      "estancia": {
+        "name": "Estancia El Amanecer",
+        "role": "Agricultural Company",
+        "content": "The technical support and quality of information have allowed us to make much better decisions during critical drought moments."
+      }
+    }
+  },
+  "news": {
+    "title": "News",
+    "subtitle": "The latest news about technology, events, and launches.",
+    "viewAll": "View All News",
+    "readMore": "Read More",
+    "items": {
+      "launch": {
+        "title": "Launch of the New Pasturometer 3.0",
+        "category": "Product",
+        "description": "Greater precision and satellite connectivity in our flagship device."
+      },
+      "expo": {
+        "title": "Pastech at Rural Expo 2024",
+        "category": "Events",
+        "description": "Visit our stand and discover the latest innovations in livestock technology."
+      },
+      "alliance": {
+        "title": "Strategic Alliance with INTA",
+        "category": "Institutional",
+        "description": "We signed an agreement to validate new sustainability metrics."
+      }
+    }
+  },
+  "contact": {
+    "title": "Let's Talk About Your Field",
+    "subtitle": "Leave us your details and a specialist will contact you to advise you on the best solution for your establishment.",
+    "email": "Email",
+    "phone": "Phone",
+    "offices": "Offices",
+    "address": "Innovation Park, Buenos Aires, Argentina",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "John Doe",
+      "phone": "Phone",
+      "phonePlaceholder": "+1...",
+      "email": "Email",
+      "emailPlaceholder": "john@farm.com",
+      "message": "Message",
+      "messagePlaceholder": "Tell us about your establishment...",
+      "submit": "Send Inquiry"
+    }
+  },
+  "footer": {
+    "description": "Technology for precision pasture management. We transform data into productive and sustainable decisions.",
+    "solutions": "Solutions",
+    "company": "Company",
+    "pasturometer": "Pasturometer",
+    "satellite": "Pastech Satellite",
+    "drone": "Pastech Drone",
+    "intelligent": "Smart Grazing",
+    "about": "About Us",
+    "testimonials": "Testimonials",
+    "news": "News",
+    "contact": "Contact",
+    "copyright": "© 2025 Pastech. All rights reserved."
+  },
+  "languageSelector": {
+    "label": "Language",
+    "es": "Español",
+    "en": "English",
+    "pt": "Português"
+  }
+}

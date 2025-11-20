@@ -1,0 +1,174 @@
+{
+  "metadata": {
+    "title": "Pastech | Tecnologia para Gestão de Pastagens com Precisão",
+    "description": "Medimos, analisamos e gerenciamos pastagens com ferramentas conectadas que transformam dados em decisões produtivas e sustentáveis."
+  },
+  "header": {
+    "home": "Início",
+    "solutions": "Soluções",
+    "testimonials": "Depoimentos",
+    "about": "Sobre Nós",
+    "community": "Comunidade",
+    "news": "Novidades",
+    "contact": "Contato",
+    "communityAlliances": "Comunidade / Alianças",
+    "solutionsMenu": {
+      "pasturometer": {
+        "title": "Pasturômetro",
+        "description": "Medição precisa da altura e densidade do pasto"
+      },
+      "satellite": {
+        "title": "Pastech Satelital",
+        "description": "Monitoramento por imagens de satélite"
+      },
+      "drone": {
+        "title": "Pastech Drone",
+        "description": "Análise com voos autônomos e mapeamento"
+      },
+      "intelligent": {
+        "title": "Pastoreio Inteligente",
+        "description": "Otimização com inteligência artificial"
+      }
+    }
+  },
+  "hero": {
+    "badge": "Inovação em Gestão Pecuária",
+    "title": "Tecnologia para Gestão de Pastagens com",
+    "titleHighlight": "Precisão.",
+    "description": "Medimos, analisamos e gerenciamos pastagens com ferramentas conectadas que transformam dados em decisões produtivas e sustentáveis.",
+    "cta": "Comece Grátis"
+  },
+  "about": {
+    "badge": "Inovação Baseada em Conhecimento Científico",
+    "description": "Somos uma plataforma de conversão e posicionamento que busca refletir o nível tecnológico, científico e empresarial da marca.",
+    "mission": {
+      "title": "Missão",
+      "content": "Desenvolvemos inovação tecnológica para o manejo sustentável de coberturas vegetais em sistemas de produção agropecuária. Melhoramos a produtividade e minimizamos o impacto ambiental."
+    },
+    "vision": {
+      "title": "Visão",
+      "content": "Nos consolidaremos como referência científico-tecnológica para o manejo sustentável de ecossistemas terrestres, liderando a inovação para uma produção amigável com o meio ambiente."
+    },
+    "tool": "Uma ferramenta precisa para otimizar a gestão de pastagens e melhorar a produtividade."
+  },
+  "features": {
+    "title": "Nosso Processo",
+    "subtitle": "Três pilares que transformam a gestão do seu campo",
+    "measurement": {
+      "title": "Medição",
+      "description": "Dispositivo eletrônico de medição de pasto que facilita a coleta de dados precisos no campo, eliminando erros manuais."
+    },
+    "monitoring": {
+      "title": "Monitoramento",
+      "description": "Monitoramento remoto do estoque de pasto. Fornecemos o dado exato para que você conheça a disponibilidade forrageira em tempo real."
+    },
+    "management": {
+      "title": "Gestão",
+      "description": "Gestão integral em estabelecimentos pecuários. Transformamos informação em decisões para otimizar o aproveitamento."
+    }
+  },
+  "solutions": {
+    "title": "Nossas Soluções",
+    "subtitle": "Ferramentas integradas para cada etapa do ciclo produtivo, desde a medição até a tomada de decisões.",
+    "learnMore": "Saiba Mais",
+    "pasturometer": {
+      "title": "Pasturômetro",
+      "description": "Dispositivo de medição de alta precisão para registrar a altura e densidade do pasto em tempo real."
+    },
+    "satellite": {
+      "title": "Pastech Satelital",
+      "description": "Análise de imagens de satélite para monitorar grandes extensões de terreno e detectar anomalias."
+    },
+    "drone": {
+      "title": "Pastech Drone",
+      "description": "Levantamento aéreo detalhado para zonas de difícil acesso e mapeamento de alta resolução."
+    },
+    "intelligent": {
+      "title": "Pastoreio Inteligente",
+      "description": "Algoritmos de IA que sugerem rotações ótimas baseadas em dados históricos e atuais."
+    }
+  },
+  "testimonials": {
+    "title": "O Que Nossos Clientes Dizem",
+    "subtitle": "Produtores e assessores que já estão transformando sua gestão com Pastech.",
+    "items": {
+      "carlos": {
+        "name": "Carlos Rodríguez",
+        "role": "Produtor Pecuário",
+        "content": "Desde que implementamos Pastech, otimizamos nossa carga animal em 20%. A precisão dos dados é impressionante."
+      },
+      "maria": {
+        "name": "María González",
+        "role": "Engenheira Agrônoma",
+        "content": "A ferramenta satelital nos permite monitorar campos à distância com uma facilidade incrível. É uma mudança de jogo para a assessoria técnica."
+      },
+      "estancia": {
+        "name": "Estância El Amanecer",
+        "role": "Empresa Agropecuária",
+        "content": "O suporte técnico e a qualidade da informação nos permitiram tomar decisões muito mais acertadas em momentos críticos de seca."
+      }
+    }
+  },
+  "news": {
+    "title": "Novidades",
+    "subtitle": "As últimas notícias sobre tecnologia, eventos e lançamentos.",
+    "viewAll": "Ver Todas as Notícias",
+    "readMore": "Ler Mais",
+    "items": {
+      "launch": {
+        "title": "Lançamento do Novo Pasturômetro 3.0",
+        "category": "Produto",
+        "description": "Maior precisão e conectividade satelital em nosso dispositivo principal."
+      },
+      "expo": {
+        "title": "Pastech Presente na Expo Rural 2024",
+        "category": "Eventos",
+        "description": "Visite nosso stand e conheça as últimas novidades em tecnologia pecuária."
+      },
+      "alliance": {
+        "title": "Aliança Estratégica com INTA",
+        "category": "Institucional",
+        "description": "Assinamos um convênio para validar novas métricas de sustentabilidade."
+      }
+    }
+  },
+  "contact": {
+    "title": "Vamos Falar do Seu Campo",
+    "subtitle": "Deixe seus dados e um especialista entrará em contato para assessorá-lo sobre a melhor solução para seu estabelecimento.",
+    "email": "Email",
+    "phone": "Telefone",
+    "offices": "Escritórios",
+    "address": "Parque de Inovação, Buenos Aires, Argentina",
+    "form": {
+      "name": "Nome",
+      "namePlaceholder": "João Silva",
+      "phone": "Telefone",
+      "phonePlaceholder": "+55...",
+      "email": "Email",
+      "emailPlaceholder": "joao@fazenda.com",
+      "message": "Mensagem",
+      "messagePlaceholder": "Conte-nos sobre seu estabelecimento...",
+      "submit": "Enviar Consulta"
+    }
+  },
+  "footer": {
+    "description": "Tecnologia para gestão de pastagens com precisão. Transformamos dados em decisões produtivas e sustentáveis.",
+    "solutions": "Soluções",
+    "company": "Empresa",
+    "pasturometer": "Pasturômetro",
+    "satellite": "Pastech Satelital",
+    "drone": "Pastech Drone",
+    "intelligent": "Pastoreio Inteligente",
+    "about": "Sobre Nós",
+    "testimonials": "Depoimentos",
+    "news": "Novidades",
+    "contact": "Contato",
+    "copyright": "© 2025 Pastech. Todos os direitos reservados."
+  },
+  "languageSelector": {
+    "label": "Idioma",
+    "es": "Español",
+    "en": "English",
+    "pt": "Português"
+  }
+}

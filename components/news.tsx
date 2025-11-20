@@ -3,47 +3,50 @@
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Calendar } from 'lucide-react'
 import { motion } from "framer-motion"
-
-const news = [
-  {
-    id: 1,
-    title: "Lanzamiento del nuevo Pasturometro 3.0",
-    date: "15 Nov 2024",
-    category: "Producto",
-    image: "/placeholder.svg?height=400&width=600&text=Nuevo+Dispositivo",
-    excerpt: "Mayor precisión y conectividad satelital en nuestro dispositivo insignia.",
-  },
-  {
-    id: 2,
-    title: "Pastech presente en la Expo Rural 2024",
-    date: "02 Oct 2024",
-    category: "Eventos",
-    image: "/placeholder.svg?height=400&width=600&text=Expo+Rural",
-    excerpt: "Visitá nuestro stand y conocé las últimas novedades en tecnología ganadera.",
-  },
-  {
-    id: 3,
-    title: "Alianza estratégica con INTA",
-    date: "20 Sep 2024",
-    category: "Institucional",
-    image: "/placeholder.svg?height=400&width=600&text=Alianza+INTA",
-    excerpt: "Firmamos un convenio para validar nuevas métricas de sustentabilidad.",
-  },
-]
+import { useTranslations } from 'next-intl'
 
 export function News() {
+  const t = useTranslations('news')
+
+  const news = [
+    {
+      id: 1,
+      title: t('items.launch.title'),
+      date: "15 Nov 2024",
+      category: t('items.launch.category'),
+      image: "/placeholder.svg?height=400&width=600&text=Nuevo+Dispositivo",
+      excerpt: t('items.launch.description'),
+    },
+    {
+      id: 2,
+      title: t('items.expo.title'),
+      date: "02 Oct 2024",
+      category: t('items.expo.category'),
+      image: "/placeholder.svg?height=400&width=600&text=Expo+Rural",
+      excerpt: t('items.expo.description'),
+    },
+    {
+      id: 3,
+      title: t('items.alliance.title'),
+      date: "20 Sep 2024",
+      category: t('items.alliance.category'),
+      image: "/placeholder.svg?height=400&width=600&text=Alianza+INTA",
+      excerpt: t('items.alliance.description'),
+    },
+  ]
+
   return (
     <section id="novedades" className="py-24 bg-background">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-4">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Novedades</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">{t('title')}</h2>
             <p className="text-muted-foreground text-lg">
-              Las últimas noticias sobre tecnología, eventos y lanzamientos.
+              {t('subtitle')}
             </p>
           </div>
           <Button variant="outline" className="text-white border-white/20 hover:bg-white/10">
-            Ver todas las noticias
+            {t('viewAll')}
           </Button>
         </div>
 
@@ -76,7 +79,7 @@ export function News() {
               </h3>
               <p className="text-muted-foreground mb-4 line-clamp-2">{item.excerpt}</p>
               <div className="flex items-center text-primary font-medium text-sm group-hover:translate-x-1 transition-transform">
-                Leer más <ArrowRight className="w-4 h-4 ml-1" />
+                {t('readMore')} <ArrowRight className="w-4 h-4 ml-1" />
               </div>
             </motion.div>
           ))}

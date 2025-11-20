@@ -2,8 +2,11 @@
 
 import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
+import { useTranslations } from 'next-intl'
 
 export function Hero() {
+  const t = useTranslations('hero')
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Background Image with Overlay */}
@@ -30,7 +33,7 @@ export function Hero() {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
             </span>
-            Innovación en gestión ganadera
+            {t('badge')}
           </motion.div>
 
           <motion.h1
@@ -39,7 +42,7 @@ export function Hero() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-tight"
           >
-            Tecnología para gestionar el pasto con <span className="text-primary">precisión.</span>
+            {t('title')} <span className="text-primary">{t('titleHighlight')}</span>
           </motion.h1>
 
           <motion.p
@@ -48,8 +51,7 @@ export function Hero() {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed"
           >
-            Medimos, analizamos y gestionamos el pasto con herramientas conectadas que transforman datos en decisiones
-            productivas y sustentables.
+            {t('description')}
           </motion.p>
 
           <motion.div
@@ -59,9 +61,9 @@ export function Hero() {
             className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4"
           >
             <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-8 h-12 cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/25">
-              Comenzá gratis
+              {t('cta')}
             </Button>
-            
+
           </motion.div>
         </div>
       </div>

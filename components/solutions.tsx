@@ -1,51 +1,54 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Satellite, Ruler, Plane, BrainCircuit } from 'lucide-react'
-
-const solutions = [
-  {
-    id: "pasturometro",
-    title: "Pasturometro",
-    description:
-      "Dispositivo de medición de alta precisión para registrar la altura y densidad del pasto en tiempo real.",
-    icon: Ruler,
-    color: "text-primary",
-    bg: "bg-primary/10",
-  },
-  {
-    id: "satelital",
-    title: "Pastech Satelital",
-    description:
-      "Análisis de imágenes satelitales para monitorear grandes extensiones de terreno y detectar anomalías.",
-    icon: Satellite,
-    color: "text-secondary",
-    bg: "bg-secondary/10",
-  },
-  {
-    id: "dron",
-    title: "Pastech Dron",
-    description: "Relevamiento aéreo detallado para zonas de difícil acceso y mapeo de alta resolución.",
-    icon: Plane,
-    color: "text-accent",
-    bg: "bg-accent/10",
-  },
-  {
-    id: "inteligente",
-    title: "Pastoreo Inteligente",
-    description: "Algoritmos de IA que sugieren rotaciones óptimas basadas en datos históricos y actuales.",
-    icon: BrainCircuit,
-    color: "text-blue-400",
-    bg: "bg-blue-400/10",
-  },
-]
+import { useTranslations } from 'next-intl'
 
 export function Solutions() {
+  const t = useTranslations('solutions')
+
+  const solutions = [
+    {
+      id: "pasturometro",
+      title: t('pasturometer.title'),
+      description: t('pasturometer.description'),
+      icon: Ruler,
+      color: "text-primary",
+      bg: "bg-primary/10",
+    },
+    {
+      id: "satelital",
+      title: t('satellite.title'),
+      description: t('satellite.description'),
+      icon: Satellite,
+      color: "text-secondary",
+      bg: "bg-secondary/10",
+    },
+    {
+      id: "dron",
+      title: t('drone.title'),
+      description: t('drone.description'),
+      icon: Plane,
+      color: "text-accent",
+      bg: "bg-accent/10",
+    },
+    {
+      id: "inteligente",
+      title: t('intelligent.title'),
+      description: t('intelligent.description'),
+      icon: BrainCircuit,
+      color: "text-blue-400",
+      bg: "bg-blue-400/10",
+    },
+  ]
+
   return (
     <section id="soluciones" className="py-24 bg-background">
       <div className="container px-4 md:px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Nuestras Soluciones</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">{t('title')}</h2>
           <p className="text-muted-foreground text-lg">
-            Herramientas integradas para cada etapa del ciclo productivo, desde la medición hasta la toma de decisiones.
+            {t('subtitle')}
           </p>
         </div>
 
@@ -61,7 +64,7 @@ export function Solutions() {
               <h3 className="text-xl font-bold text-white mb-3">{solution.title}</h3>
               <p className="text-muted-foreground text-sm mb-6">{solution.description}</p>
               <Button variant="link" className="p-0 h-auto text-white hover:text-primary group-hover:translate-x-1 transition-transform">
-                Saber más <ArrowRight className="w-4 h-4 ml-1" />
+                {t('learnMore')} <ArrowRight className="w-4 h-4 ml-1" />
               </Button>
             </div>
           ))}
