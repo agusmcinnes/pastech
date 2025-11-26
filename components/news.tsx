@@ -40,12 +40,12 @@ export function News() {
       <div className="container px-4 md:px-6">
         <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-4">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">{t('title')}</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">{t('title')}</h2>
             <p className="text-muted-foreground text-lg">
               {t('subtitle')}
             </p>
           </div>
-          <Button variant="outline" className="text-white border-white/20 hover:bg-white/10">
+          <Button variant="outline" className="text-foreground border-foreground/20 hover:bg-foreground/5">
             {t('viewAll')}
           </Button>
         </div>
@@ -74,7 +74,7 @@ export function News() {
                 <Calendar className="w-4 h-4" />
                 {item.date}
               </div>
-              <h3 className="text-xl font-bold text-white mb-2 group-hover:text-primary transition-colors">
+              <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
                 {item.title}
               </h3>
               <p className="text-muted-foreground mb-4 line-clamp-2">{item.excerpt}</p>

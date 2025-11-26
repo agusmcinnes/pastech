@@ -1,7 +1,7 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Satellite, Ruler, Plane, BrainCircuit, Layers } from 'lucide-react'
+import { ArrowRight, Satellite, Gauge, Camera, Sparkles } from 'lucide-react'
 import { useTranslations, useLocale } from 'next-intl'
 import Link from 'next/link'
 
@@ -14,41 +14,25 @@ export function Solutions() {
       id: "pasturometro",
       title: t('pasturometer.title'),
       description: t('pasturometer.description'),
-      icon: Ruler,
-      color: "text-primary",
-      bg: "bg-primary/10",
+      icon: Gauge,
     },
     {
       id: "satelital",
       title: t('satellite.title'),
       description: t('satellite.description'),
       icon: Satellite,
-      color: "text-secondary",
-      bg: "bg-secondary/10",
     },
     {
       id: "dron",
       title: t('drone.title'),
       description: t('drone.description'),
-      icon: Plane,
-      color: "text-accent",
-      bg: "bg-accent/10",
+      icon: Camera,
     },
     {
       id: "inteligente",
       title: t('intelligent.title'),
       description: t('intelligent.description'),
-      icon: BrainCircuit,
-      color: "text-blue-400",
-      bg: "bg-blue-400/10",
-    },
-    {
-      id: "gestion-pastoreo",
-      title: t('grazingManagement.title'),
-      description: t('grazingManagement.description'),
-      icon: Layers,
-      color: "text-emerald-400",
-      bg: "bg-emerald-400/10",
+      icon: Sparkles,
     },
   ]
 
@@ -56,27 +40,27 @@ export function Solutions() {
     <section id="soluciones" className="py-24 bg-background">
       <div className="container px-4 md:px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">{t('title')}</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">{t('title')}</h2>
           <p className="text-muted-foreground text-lg">
             {t('subtitle')}
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {solutions.map((solution) => (
             <Link
               key={solution.id}
               href={`/${locale}/solutions/${solution.id}`}
-              className="group relative bg-card border border-border rounded-xl p-6 hover:border-primary/50 transition-all duration-300 hover:-translate-y-1 flex flex-col h-full cursor-pointer"
+              className="group relative bg-primary rounded-xl p-6 hover:bg-primary/90 transition-all duration-300 hover:-translate-y-1 flex flex-col h-full cursor-pointer shadow-lg hover:shadow-xl"
             >
               <div className="flex-grow">
-                <div className={`w-12 h-12 rounded-lg ${solution.bg} flex items-center justify-center mb-4`}>
-                  <solution.icon className={`w-6 h-6 ${solution.color}`} />
+                <div className="w-12 h-12 rounded-lg bg-white/20 flex items-center justify-center mb-4">
+                  <solution.icon className="w-6 h-6 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-white mb-3">{solution.title}</h3>
-                <p className="text-muted-foreground text-sm mb-6">{solution.description}</p>
+                <p className="text-white/80 text-sm mb-6">{solution.description}</p>
               </div>
-              <span className="inline-flex items-center p-0 h-auto text-white group-hover:text-primary group-hover:translate-x-1 transition-transform">
+              <span className="inline-flex items-center p-0 h-auto text-white group-hover:translate-x-1 transition-transform">
                 {t('learnMore')} <ArrowRight className="w-4 h-4 ml-1" />
               </span>
             </Link>

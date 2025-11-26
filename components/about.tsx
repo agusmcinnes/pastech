@@ -7,7 +7,7 @@ export function About() {
   const t = useTranslations('about')
 
   return (
-    <section id="nosotros" className="py-24 bg-muted/30">
+    <section id="empresa" className="py-24 md:px-20 bg-muted/30">
       <div className="container px-4 md:px-6">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <motion.div
@@ -45,10 +45,14 @@ export function About() {
             className="relative"
           >
             <div className="absolute -inset-4 bg-gradient-to-r from-primary to-secondary opacity-20 blur-2xl rounded-full" />
-            <div className="relative rounded-2xl overflow-hidden border border-border shadow-2xl">
-              <img
-                src="/images/about-pastech.jpg"
-                alt="Equipo cofundadores Pastech"
+            <div className="relative rounded-2xl overflow-hidden border border-border shadow-2xl max-w-xs mx-auto">
+              <video
+                src="/videos/verde-esperanza.mp4"
+                autoPlay
+                muted
+                loop
+                playsInline
+                controls
                 className="w-full h-full object-cover"
               />
             </div>

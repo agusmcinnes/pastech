@@ -14,7 +14,7 @@ export function Contact() {
       <div className="container px-4 md:px-6">
         <div className="grid lg:grid-cols-2 gap-12">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">{t('title')}</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">{t('title')}</h2>
             <p className="text-muted-foreground text-lg mb-8">
               {t('subtitle')}
             </p>
@@ -25,7 +25,7 @@ export function Contact() {
                   <Mail className="w-5 h-5 text-primary" />
                 </div>
                 <div>
-                  <h3 className="font-medium text-white">{t('email')}</h3>
+                  <h3 className="font-medium text-foreground">{t('email')}</h3>
                   <p className="text-muted-foreground">contacto@pastech.com</p>
                 </div>
               </div>
@@ -34,7 +34,7 @@ export function Contact() {
                   <Phone className="w-5 h-5 text-primary" />
                 </div>
                 <div>
-                  <h3 className="font-medium text-white">{t('phone')}</h3>
+                  <h3 className="font-medium text-foreground">{t('phone')}</h3>
                   <p className="text-muted-foreground">+54 9 11 1234-5678</p>
                 </div>
               </div>
@@ -43,37 +43,37 @@ export function Contact() {
                   <MapPin className="w-5 h-5 text-primary" />
                 </div>
                 <div>
-                  <h3 className="font-medium text-white">{t('offices')}</h3>
+                  <h3 className="font-medium text-foreground">{t('offices')}</h3>
                   <p className="text-muted-foreground">{t('address')}</p>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="bg-card border border-border rounded-2xl p-8">
+          <div className="bg-background border border-border rounded-2xl p-8 shadow-sm">
             <form className="space-y-6">
               <div className="grid sm:grid-cols-2 gap-4">
                 <div className="space-y-2">
-                  <label htmlFor="name" className="text-sm font-medium text-white">
+                  <label htmlFor="name" className="text-sm font-medium text-foreground">
                     {t('form.name')}
                   </label>
                   <Input id="name" placeholder={t('form.namePlaceholder')} className="bg-background border-border" />
                 </div>
                 <div className="space-y-2">
-                  <label htmlFor="phone" className="text-sm font-medium text-white">
+                  <label htmlFor="phone" className="text-sm font-medium text-foreground">
                     {t('form.phone')}
                   </label>
                   <Input id="phone" placeholder={t('form.phonePlaceholder')} className="bg-background border-border" />
                 </div>
               </div>
               <div className="space-y-2">
-                <label htmlFor="email" className="text-sm font-medium text-white">
+                <label htmlFor="email" className="text-sm font-medium text-foreground">
                   {t('form.email')}
                 </label>
                 <Input id="email" type="email" placeholder={t('form.emailPlaceholder')} className="bg-background border-border" />
               </div>
               <div className="space-y-2">
-                <label htmlFor="message" className="text-sm font-medium text-white">
+                <label htmlFor="message" className="text-sm font-medium text-foreground">
                   {t('form.message')}
                 </label>
                 <Textarea

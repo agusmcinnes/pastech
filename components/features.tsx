@@ -45,7 +45,7 @@ export function Features() {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
             {t('title')}
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
@@ -61,7 +61,7 @@ export function Features() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.15 }}
-              className={`group relative p-8 rounded-2xl bg-card border border-border hover:border-${feature.color}/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-${feature.color}/10`}
+              className={`group relative p-8 rounded-2xl bg-muted/30 border border-border hover:border-${feature.color}/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-${feature.color}/10`}
             >
               <div className={`absolute -top-6 left-8 text-6xl font-bold text-${feature.color}/10 group-hover:text-${feature.color}/20 transition-colors duration-300`}>
                 {feature.number}
@@ -69,7 +69,7 @@ export function Features() {
               <div className={`mb-6 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-${feature.color}/10 text-${feature.color} group-hover:scale-110 transition-transform duration-300`}>
                 <feature.icon className="h-6 w-6" />
               </div>
-              <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-primary transition-colors duration-300">
+              <h3 className="text-2xl font-bold text-foreground mb-4 group-hover:text-primary transition-colors duration-300">
                 {feature.title}
               </h3>
               <p className="text-muted-foreground leading-relaxed">

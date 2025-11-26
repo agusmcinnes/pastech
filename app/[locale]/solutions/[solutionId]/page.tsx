@@ -1,6 +1,6 @@
 import { getTranslations } from 'next-intl/server'
 import { Button } from "@/components/ui/button"
-import { ArrowLeft, Check, Satellite, Ruler, Plane, BrainCircuit, Layers } from 'lucide-react'
+import { ArrowLeft, Check, Satellite, Gauge, Camera, Sparkles } from 'lucide-react'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { Header } from "@/components/header"
@@ -8,34 +8,32 @@ import { Footer } from "@/components/footer"
 
 const solutionConfig = {
   pasturometro: {
-    icon: Ruler,
+    icon: Gauge,
     color: "text-primary",
     bg: "bg-primary/10",
-    translationKey: "pasturometer"
+    translationKey: "pasturometer",
+    ctaKey: "ctaMeeting"
   },
   satelital: {
     icon: Satellite,
-    color: "text-secondary",
-    bg: "bg-secondary/10",
-    translationKey: "satellite"
+    color: "text-primary",
+    bg: "bg-primary/10",
+    translationKey: "satellite",
+    ctaKey: "ctaStart"
   },
   dron: {
-    icon: Plane,
-    color: "text-accent",
-    bg: "bg-accent/10",
-    translationKey: "drone"
+    icon: Camera,
+    color: "text-primary",
+    bg: "bg-primary/10",
+    translationKey: "drone",
+    ctaKey: "ctaStart"
   },
   inteligente: {
-    icon: BrainCircuit,
-    color: "text-blue-400",
-    bg: "bg-blue-400/10",
-    translationKey: "intelligent"
-  },
-  "gestion-pastoreo": {
-    icon: Layers,
-    color: "text-emerald-400",
-    bg: "bg-emerald-400/10",
-    translationKey: "grazingManagement"
+    icon: Sparkles,
+    color: "text-primary",
+    bg: "bg-primary/10",
+    translationKey: "intelligent",
+    ctaKey: "ctaStart"
   }
 }
 
@@ -76,7 +74,7 @@ export default async function SolutionDetailPage({ params }: PageProps) {
       <Header />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-16 bg-gradient-to-b from-background to-card">
+      <section className="pt-32 pb-16 bg-gradient-to-b from-background to-muted/30">
         <div className="container px-4 md:px-6">
           <Link
             href={`/${locale}/#soluciones`}
@@ -91,7 +89,7 @@ export default async function SolutionDetailPage({ params }: PageProps) {
               <Icon className={`w-8 h-8 ${config.color}`} />
             </div>
             <div>
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
                 {title}
               </h1>
               <p className="text-xl text-muted-foreground max-w-2xl">
@@ -115,7 +113,7 @@ export default async function SolutionDetailPage({ params }: PageProps) {
               <div className="mt-8">
                 <Link href={`/${locale}/#contacto`}>
                   <Button size="lg" className="w-full sm:w-auto">
-                    {t('detail.contact')}
+                    {t(`detail.${config.ctaKey}`)}
                   </Button>
                 </Link>
               </div>
@@ -124,8 +122,8 @@ export default async function SolutionDetailPage({ params }: PageProps) {
             {/* Features & Benefits */}
             <div className="space-y-8">
               {/* Features */}
-              <div className="bg-card border border-border rounded-xl p-6">
-                <h2 className="text-xl font-bold text-white mb-4">
+              <div className="bg-muted/50 border border-border rounded-xl p-6">
+                <h2 className="text-xl font-bold text-foreground mb-4">
                   {t('detail.features')}
                 </h2>
                 <ul className="space-y-3">
@@ -141,8 +139,8 @@ export default async function SolutionDetailPage({ params }: PageProps) {
               </div>
 
               {/* Benefits */}
-              <div className="bg-card border border-border rounded-xl p-6">
-                <h2 className="text-xl font-bold text-white mb-4">
+              <div className="bg-muted/50 border border-border rounded-xl p-6">
+                <h2 className="text-xl font-bold text-foreground mb-4">
                   {t('detail.benefits')}
                 </h2>
                 <ul className="space-y-3">

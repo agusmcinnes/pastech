@@ -5,13 +5,12 @@
   },
   "header": {
     "home": "Home",
+    "company": "Company",
     "solutions": "Solutions",
-    "testimonials": "Testimonials",
-    "about": "About Us",
-    "community": "Community",
+    "team": "Team",
     "news": "News",
+    "community": "Community",
     "contact": "Contact",
-    "communityAlliances": "Community / Alliances",
     "solutionsMenu": {
       "pasturometer": {
         "title": "Pasturometer",
@@ -28,10 +27,6 @@
       "intelligent": {
         "title": "Smart Grazing",
         "description": "Optimization with artificial intelligence"
-      },
-      "grazingManagement": {
-        "title": "Grazing Management",
-        "description": "Comprehensive management platform"
       }
     }
   },
@@ -68,11 +63,11 @@
   "solutions": {
     "title": "Our Solutions",
     "subtitle": "Integrated tools for every stage of the production cycle, from measurement to decision-making.",
-    "learnMore": "Learn More",
+    "learnMore": "+ INFO",
     "contact": "Contact Us",
     "pasturometer": {
-      "title": "Pasturometer",
-      "description": "High-precision measurement device to record grass height and density in real time."
+      "title": "Electronic Pasturometer",
+      "description": "Portable device that estimates field forage availability in seconds."
     },
     "satellite": {
       "title": "Pastech Satellite",
@@ -80,11 +75,11 @@
     },
     "drone": {
       "title": "Pastech Drone",
-      "description": "Detailed aerial survey for hard-to-access areas and high-resolution mapping."
+      "description": "Continuous pasture monitoring through satellite images and vegetative indices (NDVI, biomass, vigor)."
     },
     "intelligent": {
-      "title": "Smart Grazing",
-      "description": "AI algorithms that suggest optimal rotations based on historical and current data."
+      "title": "AI-Powered Grazing",
+      "description": "High-resolution aerial surveys to validate management practices and perform specific diagnostics."
     },
     "grazingManagement": {
       "title": "Intelligent Grazing Management",
@@ -94,11 +89,12 @@
       "backToSolutions": "Back to Solutions",
       "features": "Features",
       "benefits": "Benefits",
-      "contact": "Request information",
+      "ctaMeeting": "Schedule a meeting",
+      "ctaStart": "Get started now",
       "pasturometer": {
-        "longDescription": "The Pasturometer is a state-of-the-art electronic device designed to precisely measure grass height and density in real time. It allows producers to make decisions based on concrete data.",
-        "features": ["High-precision ultrasonic measurement", "Bluetooth and WiFi connectivity", "Mobile app with cloud sync", "Long-lasting battery", "Water and dust resistant"],
-        "benefits": ["Eliminates manual measurement errors", "Optimizes stocking rate", "Reduces overgrazing", "Improves productivity up to 25%"]
+        "longDescription": "Portable device that estimates field forage availability in seconds. Measures grass height and density using precision sensors and automatically syncs data with the Pastech platform.",
+        "features": ["Precision sensors", "Automatic platform synchronization", "Customizable calibration curves", "Measurement in seconds", "Portable and easy to use"],
+        "benefits": ["Objective information", "Efficient grazing planning", "Time savings on field visits", "Direct integration with other Pastech modules", "Customizable calibration curves"]
       },
       "satellite": {
         "longDescription": "Pastech Satellite uses state-of-the-art satellite imagery to monitor large areas of land, detect anomalies, and analyze pasture evolution over time.",
@@ -106,14 +102,14 @@
         "benefits": ["Remote monitoring without field visits", "Early problem detection", "Data-driven strategic planning", "Reduced operational costs"]
       },
       "drone": {
-        "longDescription": "Pastech Drone offers detailed aerial surveys for hard-to-access areas, generating high-resolution maps and 3D terrain models for precise management.",
-        "features": ["Programmable autonomous flights", "Multispectral camera", "Orthomosaic map generation", "Digital elevation models", "Biomass analysis"],
-        "benefits": ["Access to difficult areas", "Greater detail than satellite imagery", "Flexible flight frequency", "On-demand updated data"]
+        "longDescription": "Continuous pasture monitoring through satellite images and vegetative indices (NDVI, biomass, vigor). Compare campaigns, detect variations, and plan forage use with precise and up-to-date information.",
+        "features": ["High-resolution satellite imagery", "Vegetative indices (NDVI, biomass, vigor)", "Campaign comparison", "Variation detection", "Updated information"],
+        "benefits": ["Measurement automation", "Instant information for decision-making", "Remote consultation and tracking", "Money and time savings", "Automatic reports"]
       },
       "intelligent": {
-        "longDescription": "The Smart Grazing system uses artificial intelligence algorithms to analyze historical and current data, suggesting optimal rotations that maximize productivity.",
-        "features": ["Machine learning algorithms", "Personalized recommendations", "Weather data integration", "Growth prediction", "Interactive dashboard"],
-        "benefits": ["Maximizes pasture utilization", "Reduces waste", "Optimizes rotation cycles", "Data science-driven decisions"]
+        "longDescription": "High-resolution aerial surveys providing detailed information to validate management practices and perform specific diagnostics. Data integrates with field measurements and satellite monitoring, offering a complete system view.",
+        "features": ["High-resolution aerial surveys", "Integration with field measurements", "Integration with satellite monitoring", "Specific diagnostics", "Complete system view"],
+        "benefits": ["Maximum precision in specific areas", "Visual and quantitative diagnostics", "Ideal for trials or problem areas"]
       },
       "grazingManagement": {
         "longDescription": "The Intelligent Grazing Management platform centralizes all your field data in one place, enabling a comprehensive view and strategic, efficient decision-making.",
@@ -127,6 +123,11 @@
     "users": "active users",
     "efficiency": "improvement in forage efficiency",
     "animals": "animals grazing"
+  },
+  "team": {
+    "title": "Our Team",
+    "subtitle": "Professionals passionate about transforming livestock farming with technology.",
+    "comingSoon": "Coming Soon"
   },
   "alliances": {
     "title": "Strategic Alliances",

@@ -32,11 +32,11 @@ export function Testimonials() {
   ]
 
   return (
-    <section id="testimonios" className="py-24 bg-background relative overflow-hidden">
+    <section className="py-24 bg-background relative overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary/20 to-transparent" />
       <div className="container px-4 md:px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">{t('title')}</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">{t('title')}</h2>
           <p className="text-muted-foreground text-lg">
             {t('subtitle')}
           </p>
@@ -50,7 +50,7 @@ export function Testimonials() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-card border border-border p-8 rounded-2xl relative"
+              className="bg-muted/50 border border-border p-8 rounded-2xl relative"
             >
               <div className="flex gap-1 mb-4">
                 {[...Array(testimonial.rating)].map((_, i) => (
@@ -59,7 +59,7 @@ export function Testimonials() {
               </div>
               <p className="text-muted-foreground mb-6 italic">"{testimonial.content}"</p>
               <div>
-                <p className="font-bold text-white">{testimonial.name}</p>
+                <p className="font-bold text-foreground">{testimonial.name}</p>
                 <p className="text-sm text-primary">{testimonial.role}</p>
               </div>
             </motion.div>

@@ -5,13 +5,12 @@
   },
   "header": {
     "home": "Home",
+    "company": "Empresa",
     "solutions": "Soluciones",
-    "testimonials": "Testimonios",
-    "about": "Nosotros",
-    "community": "Comunidad",
+    "team": "Equipo",
     "news": "Novedades",
+    "community": "Comunidad",
     "contact": "Contacto",
-    "communityAlliances": "Comunidad / Alianzas",
     "solutionsMenu": {
       "pasturometer": {
         "title": "Pasturómetro",
@@ -28,10 +27,6 @@
       "intelligent": {
         "title": "Pastoreo Inteligente",
         "description": "Optimización con inteligencia artificial"
-      },
-      "grazingManagement": {
-        "title": "Gestión de Pastoreo",
-        "description": "Plataforma integral de gestión"
       }
     }
   },
@@ -68,11 +63,11 @@
   "solutions": {
     "title": "Nuestras Soluciones",
     "subtitle": "Herramientas integradas para cada etapa del ciclo productivo, desde la medición hasta la toma de decisiones.",
-    "learnMore": "Saber más",
+    "learnMore": "+ INFO",
     "contact": "Contáctanos",
     "pasturometer": {
-      "title": "Pasturometro",
-      "description": "Dispositivo de medición de alta precisión para registrar la altura y densidad del pasto en tiempo real."
+      "title": "Pasturómetro Electrónico",
+      "description": "Dispositivo portátil que permite estimar en campo la disponibilidad de forraje en segundos."
     },
     "satellite": {
       "title": "Pastech Satelital",
@@ -80,11 +75,11 @@
     },
     "drone": {
       "title": "Pastech Dron",
-      "description": "Relevamiento aéreo detallado para zonas de difícil acceso y mapeo de alta resolución."
+      "description": "Monitoreo continuo de las pasturas mediante imágenes satelitales e índices vegetativos (NDVI, biomasa, vigor)."
     },
     "intelligent": {
-      "title": "Pastoreo Inteligente",
-      "description": "Algoritmos de IA que sugieren rotaciones óptimas basadas en datos históricos y actuales."
+      "title": "Pastoreo mediante IA",
+      "description": "Relevamientos aéreos de alta resolución para validar manejos y realizar diagnósticos específicos."
     },
     "grazingManagement": {
       "title": "Gestión Inteligente de Pastoreo",
@@ -94,11 +89,12 @@
       "backToSolutions": "Volver a Soluciones",
       "features": "Características",
       "benefits": "Beneficios",
-      "contact": "Solicitar información",
+      "ctaMeeting": "Agenda una reunión",
+      "ctaStart": "Comenzá ahora",
       "pasturometer": {
-        "longDescription": "El Pasturómetro es un dispositivo electrónico de última generación diseñado para medir con precisión la altura y densidad del pasto en tiempo real. Permite a los productores tomar decisiones basadas en datos concretos.",
-        "features": ["Medición ultrasónica de alta precisión", "Conectividad Bluetooth y WiFi", "App móvil con sincronización en la nube", "Batería de larga duración", "Resistente al agua y polvo"],
-        "benefits": ["Elimina errores de medición manual", "Optimiza la carga animal", "Reduce el sobrepastoreo", "Mejora la productividad hasta un 25%"]
+        "longDescription": "Dispositivo portátil que permite estimar en campo la disponibilidad de forraje en segundos. Mide altura y densidad del pasto mediante sensores de precisión y sincroniza automáticamente los datos con la plataforma Pastech.",
+        "features": ["Sensores de precisión", "Sincronización automática con plataforma", "Curvas de calibración personalizadas", "Medición en segundos", "Portátil y fácil de usar"],
+        "benefits": ["Información objetiva", "Planificación eficiente del pastoreo", "Ahorro de tiempo en recorridas a campo", "Integración directa con otros módulos de Pastech", "Curvas de calibración personalizadas"]
       },
       "satellite": {
         "longDescription": "Pastech Satelital utiliza imágenes de satélite de última generación para monitorear grandes extensiones de terreno, detectar anomalías y analizar la evolución del pasto a lo largo del tiempo.",
@@ -106,14 +102,14 @@
         "benefits": ["Monitoreo remoto sin necesidad de recorrer el campo", "Detección temprana de problemas", "Planificación estratégica basada en datos", "Reducción de costos operativos"]
       },
       "drone": {
-        "longDescription": "Pastech Dron ofrece relevamiento aéreo detallado para zonas de difícil acceso, generando mapas de alta resolución y modelos 3D del terreno para una gestión precisa.",
-        "features": ["Vuelos autónomos programables", "Cámara multiespectral", "Generación de mapas ortomosaicos", "Modelos de elevación digital", "Análisis de biomasa"],
-        "benefits": ["Acceso a zonas difíciles", "Mayor detalle que imágenes satelitales", "Flexibilidad en la frecuencia de vuelos", "Datos actualizados bajo demanda"]
+        "longDescription": "Monitoreo continuo de las pasturas mediante imágenes satelitales e índices vegetativos (NDVI, biomasa, vigor). Permite comparar campañas, detectar variaciones y planificar el uso del forraje con información precisa y actualizada.",
+        "features": ["Imágenes satelitales de alta resolución", "Índices vegetativos (NDVI, biomasa, vigor)", "Comparación entre campañas", "Detección de variaciones", "Información actualizada"],
+        "benefits": ["Automatización de las mediciones", "Información instantánea para la toma de decisiones", "Consulta y seguimiento remoto", "Ahorro de plata y tiempo", "Reportes automáticos"]
       },
       "intelligent": {
-        "longDescription": "El sistema de Pastoreo Inteligente utiliza algoritmos de inteligencia artificial para analizar datos históricos y actuales, sugiriendo rotaciones óptimas que maximizan la productividad.",
-        "features": ["Algoritmos de machine learning", "Recomendaciones personalizadas", "Integración con datos climáticos", "Predicción de crecimiento", "Dashboard interactivo"],
-        "benefits": ["Maximiza el aprovechamiento del pasto", "Reduce el desperdicio", "Optimiza los ciclos de rotación", "Decisiones basadas en ciencia de datos"]
+        "longDescription": "Relevamientos aéreos de alta resolución que brindan información detallada para validar manejos y realizar diagnósticos específicos. Los datos se integran con las mediciones de campo y el monitoreo satelital, ofreciendo una visión completa del sistema.",
+        "features": ["Relevamientos aéreos de alta resolución", "Integración con mediciones de campo", "Integración con monitoreo satelital", "Diagnósticos específicos", "Visión completa del sistema"],
+        "benefits": ["Máxima precisión en áreas puntuales", "Diagnóstico visual y cuantitativo", "Ideal para ensayos o zonas problemáticas"]
       },
       "grazingManagement": {
         "longDescription": "La plataforma de Gestión Inteligente de Pastoreo centraliza todos los datos de tu campo en un solo lugar, permitiendo una visión integral y una toma de decisiones estratégica y eficiente.",
@@ -127,6 +123,11 @@
     "users": "usuarios activos",
     "efficiency": "mejora en eficiencia forrajera",
     "animals": "animales pastoreando"
+  },
+  "team": {
+    "title": "Nuestro Equipo",
+    "subtitle": "Profesionales apasionados por transformar la ganadería con tecnología.",
+    "comingSoon": "Próximamente"
   },
   "alliances": {
     "title": "Alianzas estratégicas",

@@ -3,7 +3,7 @@
 import * as React from "react"
 import { Link } from "@/i18n/navigation"
 import Image from "next/image"
-import { Menu, X, Ruler, Satellite, Plane, Brain, ChevronDown } from 'lucide-react'
+import { Menu, X, Gauge, Satellite, Camera, Sparkles, ChevronDown } from 'lucide-react'
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -13,9 +13,13 @@ import {
 import { LanguageSelector } from "@/components/language-selector"
 import { useTranslations } from 'next-intl'
 
-export function Header() {
+interface HeaderProps {
+  transparent?: boolean
+}
+
+export function Header({ transparent = false }: HeaderProps) {
   const [isOpen, setIsOpen] = React.useState(false)
-  const [isScrolled, setIsScrolled] = React.useState(false)
+  const [isScrolled, setIsScrolled] = React.useState(!transparent)
   const [solutionsOpen, setSolutionsOpen] = React.useState(false)
   const closeTimeoutRef = React.useRef<NodeJS.Timeout | null>(null)
 
@@ -24,27 +28,27 @@ export function Header() {
   const solutions = [
     {
       title: t('solutionsMenu.pasturometer.title'),
-      href: "#pasturometro",
+      href: "/solutions/pasturometro",
       description: t('solutionsMenu.pasturometer.description'),
-      icon: Ruler,
+      icon: Gauge,
     },
     {
       title: t('solutionsMenu.satellite.title'),
-      href: "#satelital",
+      href: "/solutions/satelital",
       description: t('solutionsMenu.satellite.description'),
       icon: Satellite,
     },
     {
       title: t('solutionsMenu.drone.title'),
-      href: "#dron",
+      href: "/solutions/dron",
       description: t('solutionsMenu.drone.description'),
-      icon: Plane,
+      icon: Camera,
     },
     {
       title: t('solutionsMenu.intelligent.title'),
-      href: "#inteligente",
+      href: "/solutions/inteligente",
       description: t('solutionsMenu.intelligent.description'),
-      icon: Brain,
+      icon: Sparkles,
     },
   ]
 
@@ -63,12 +67,14 @@ export function Header() {
   }
 
   React.useEffect(() => {
+    if (!transparent) return
+
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10)
     }
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+  }, [transparent])
 
   return (
     <header
@@ -95,8 +101,16 @@ export function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-1">
-            <Link href="/" className="px-4 py-2 text-sm font-medium text-white/80 hover:text-primary transition-colors rounded-md hover:bg-white/5">
+            <Link href="/" className={`px-4 py-2 text-sm font-medium transition-colors rounded-md ${
+              isScrolled ? "text-foreground/80 hover:bg-foreground/5" : "text-white/90 hover:bg-white/10"
+            } hover:text-primary`}>
               {t('home')}
+            </Link>
+
+            <Link href="#empresa" className={`px-4 py-2 text-sm font-medium transition-colors rounded-md ${
+              isScrolled ? "text-foreground/80 hover:bg-foreground/5" : "text-white/90 hover:bg-white/10"
+            } hover:text-primary`}>
+              {t('company')}
             </Link>
 
             <DropdownMenu modal={false} open={solutionsOpen} onOpenChange={setSolutionsOpen}>
@@ -105,7 +119,9 @@ export function Header() {
                 onMouseLeave={handleMouseLeave}
 
               >
-                <DropdownMenuTrigger className="flex items-center gap-1 px-4 py-2 text-sm font-medium text-white/80 hover:text-primary transition-colors outline-none rounded-md hover:bg-white/5 cursor-pointer">
+                <DropdownMenuTrigger className={`flex items-center gap-1 px-4 py-2 text-sm font-medium transition-colors outline-none rounded-md cursor-pointer ${
+                  isScrolled ? "text-foreground/80 hover:bg-foreground/5" : "text-white/90 hover:bg-white/10"
+                } hover:text-primary`}>
                   {t('solutions')} <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${solutionsOpen ? 'rotate-180' : ''}`} />
                 </DropdownMenuTrigger>
                 <DropdownMenuContent
@@ -116,12 +132,12 @@ export function Header() {
                   onMouseLeave={handleMouseLeave}
                 >
                   {solutions.map((solution) => (
-                    <DropdownMenuItem key={solution.title} asChild className="focus:bg-white/10 data-[highlighted]:bg-white/10">
-                      <Link href={solution.href} className="flex items-start gap-3 p-3 rounded-md cursor-pointer hover:bg-white/10 transition-colors">
+                    <DropdownMenuItem key={solution.title} asChild className="focus:bg-foreground/5 data-[highlighted]:bg-foreground/5">
+                      <Link href={solution.href} className="flex items-start gap-3 p-3 rounded-md cursor-pointer hover:bg-foreground/5 transition-colors">
                         <solution.icon className="w-5 h-5 text-primary mt-0.5 shrink-0" />
                         <div className="flex flex-col gap-1">
-                          <span className="text-sm font-medium text-white">{solution.title}</span>
-                          <span className="text-xs text-white/60">{solution.description}</span>
+                          <span className="text-sm font-medium text-foreground">{solution.title}</span>
+                          <span className="text-xs text-muted-foreground">{solution.description}</span>
                         </div>
                       </Link>
                     </DropdownMenuItem>
@@ -130,34 +146,38 @@ export function Header() {
               </div>
             </DropdownMenu>
 
-            <Link href="#testimonios" className="px-4 py-2 text-sm font-medium text-white/80 hover:text-primary transition-colors rounded-md hover:bg-white/5">
-              {t('testimonials')}
+            <Link href="#equipo" className={`px-4 py-2 text-sm font-medium transition-colors rounded-md ${
+              isScrolled ? "text-foreground/80 hover:bg-foreground/5" : "text-white/90 hover:bg-white/10"
+            } hover:text-primary`}>
+              {t('team')}
             </Link>
 
-            <Link href="#nosotros" className="px-4 py-2 text-sm font-medium text-white/80 hover:text-primary transition-colors rounded-md hover:bg-white/5">
-              {t('about')}
-            </Link>
-
-            <Link href="#alianzas" className="px-4 py-2 text-sm font-medium text-white/80 hover:text-primary transition-colors rounded-md hover:bg-white/5">
-              {t('community')}
-            </Link>
-
-            <Link href="#novedades" className="px-4 py-2 text-sm font-medium text-white/80 hover:text-primary transition-colors rounded-md hover:bg-white/5">
+            <Link href="#novedades" className={`px-4 py-2 text-sm font-medium transition-colors rounded-md ${
+              isScrolled ? "text-foreground/80 hover:bg-foreground/5" : "text-white/90 hover:bg-white/10"
+            } hover:text-primary`}>
               {t('news')}
             </Link>
 
-            <Link href="#contacto" className="px-4 py-2 text-sm font-medium text-white/80 hover:text-primary transition-colors rounded-md hover:bg-white/5">
+            <Link href="#comunidad" className={`px-4 py-2 text-sm font-medium transition-colors rounded-md ${
+              isScrolled ? "text-foreground/80 hover:bg-foreground/5" : "text-white/90 hover:bg-white/10"
+            } hover:text-primary`}>
+              {t('community')}
+            </Link>
+
+            <Link href="#contacto" className={`px-4 py-2 text-sm font-medium transition-colors rounded-md ${
+              isScrolled ? "text-foreground/80 hover:bg-foreground/5" : "text-white/90 hover:bg-white/10"
+            } hover:text-primary`}>
               {t('contact')}
             </Link>
           </nav>
 
           {/* Language Selector */}
           <div className="hidden lg:block">
-            <LanguageSelector />
+            <LanguageSelector isScrolled={isScrolled} />
           </div>
 
           {/* Mobile Menu Button */}
-          <button className="lg:hidden text-foreground" onClick={() => setIsOpen(!isOpen)}>
+          <button className={`lg:hidden ${isScrolled || isOpen ? "text-foreground" : "text-white"}`} onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
         </div>
@@ -170,15 +190,23 @@ export function Header() {
             <nav className="flex flex-col gap-2">
               <Link
                 href="/"
-                className="text-lg font-medium text-white hover:text-primary py-3 transition-colors"
+                className="text-lg font-medium text-foreground hover:text-primary py-3 transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 {t('home')}
               </Link>
 
+              <Link
+                href="#empresa"
+                className="text-lg font-medium text-foreground hover:text-primary py-3 transition-colors"
+                onClick={() => setIsOpen(false)}
+              >
+                {t('company')}
+              </Link>
+
               {/* Soluciones Mobile Accordion */}
               <div className="flex flex-col gap-2">
-                <div className="flex items-center gap-2 text-lg font-medium text-white py-3">
+                <div className="flex items-center gap-2 text-lg font-medium text-foreground py-3">
                   {t('solutions')}
                 </div>
                 <div className="flex flex-col gap-1 pl-4 border-l-2 border-primary/50">
@@ -186,7 +214,7 @@ export function Header() {
                     <Link
                       key={solution.title}
                       href={solution.href}
-                      className="flex items-center gap-3 text-base text-white/70 hover:text-primary py-3 transition-colors"
+                      className="flex items-center gap-3 text-base text-foreground/70 hover:text-primary py-3 transition-colors"
                       onClick={() => setIsOpen(false)}
                     >
                       <solution.icon className="w-5 h-5" />
@@ -197,36 +225,29 @@ export function Header() {
               </div>
 
               <Link
-                href="#testimonios"
-                className="text-lg font-medium text-white hover:text-primary py-3 transition-colors"
+                href="#equipo"
+                className="text-lg font-medium text-foreground hover:text-primary py-3 transition-colors"
                 onClick={() => setIsOpen(false)}
               >
-                {t('testimonials')}
-              </Link>
-              <Link
-                href="#nosotros"
-                className="text-lg font-medium text-white hover:text-primary py-3 transition-colors"
-                onClick={() => setIsOpen(false)}
-              >
-                {t('about')}
-              </Link>
-              <Link
-                href="#alianzas"
-                className="text-lg font-medium text-white hover:text-primary py-3 transition-colors"
-                onClick={() => setIsOpen(false)}
-              >
-                {t('communityAlliances')}
+                {t('team')}
               </Link>
               <Link
                 href="#novedades"
-                className="text-lg font-medium text-white hover:text-primary py-3 transition-colors"
+                className="text-lg font-medium text-foreground hover:text-primary py-3 transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 {t('news')}
               </Link>
               <Link
+                href="#comunidad"
+                className="text-lg font-medium text-foreground hover:text-primary py-3 transition-colors"
+                onClick={() => setIsOpen(false)}
+              >
+                {t('community')}
+              </Link>
+              <Link
                 href="#contacto"
-                className="text-lg font-medium text-white hover:text-primary py-3 transition-colors"
+                className="text-lg font-medium text-foreground hover:text-primary py-3 transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 {t('contact')}

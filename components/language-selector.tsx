@@ -17,7 +17,11 @@ const languages = [
   { code: 'pt', label: 'PT', fullName: 'Português' },
 ]
 
-export function LanguageSelector() {
+interface LanguageSelectorProps {
+  isScrolled?: boolean
+}
+
+export function LanguageSelector({ isScrolled = true }: LanguageSelectorProps) {
   const locale = useLocale()
   const router = useRouter()
   const pathname = usePathname()
@@ -33,7 +37,9 @@ export function LanguageSelector() {
       <DropdownMenuTrigger asChild>
         <Button
           variant="ghost"
-          className="flex items-center cursor-pointer gap-2 px-3 py-2 text-sm font-medium text-white/80 hover:bg-white/5 transition-colors"
+          className={`flex items-center cursor-pointer gap-2 px-3 py-2 text-sm font-medium transition-colors ${
+            isScrolled ? "text-foreground/80 hover:bg-foreground/5" : "text-white/90 hover:bg-white/10"
+          }`}
         >
           <Globe className="w-4 h-4" />
           <span>{currentLang.label}</span>

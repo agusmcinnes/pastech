@@ -28,7 +28,7 @@ export function Footer() {
             </p>
           </div>
           <div>
-            <h3 className="font-bold text-white mb-4">{t('solutions')}</h3>
+            <h3 className="font-bold text-foreground mb-4">{t('solutions')}</h3>
             <ul className="space-y-2">
               <li>
                 <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
@@ -53,7 +53,7 @@ export function Footer() {
             </ul>
           </div>
           <div>
-            <h3 className="font-bold text-white mb-4">{t('company')}</h3>
+            <h3 className="font-bold text-foreground mb-4">{t('company')}</h3>
             <ul className="space-y-2">
               <li>
                 <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
