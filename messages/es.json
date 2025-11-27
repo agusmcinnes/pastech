@@ -126,8 +126,7 @@
   },
   "team": {
     "title": "Nuestro Equipo",
-    "subtitle": "Profesionales apasionados por transformar la ganadería con tecnología.",
-    "comingSoon": "Próximamente"
+    "description": "Pastech es un equipo interdisciplinario que une la experiencia del campo con la ciencia y la tecnología. Juntamos el mundo del agro y el mundo de la tecnología, para hacer un manejo inteligente del pasto, con el objetivo de lograr un impacto económico y ambiental."
   },
   "alliances": {
     "title": "Alianzas estratégicas",
