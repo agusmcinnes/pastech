@@ -26,7 +26,7 @@ export function Alliances() {
     <section className="py-16 bg-background overflow-hidden">
       <div className="container px-4 md:px-6 mb-12">
         <div className="text-center max-w-3xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
             {t('title')}
           </h2>
           <p className="text-muted-foreground text-lg">

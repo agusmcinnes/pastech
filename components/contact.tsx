@@ -14,7 +14,7 @@ export function Contact() {
       <div className="container px-4 md:px-6">
         <div className="grid lg:grid-cols-2 gap-12">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">{t('title')}</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">{t('title')}</h2>
             <p className="text-muted-foreground text-lg mb-8">
               {t('subtitle')}
             </p>

@@ -45,7 +45,7 @@ export function Features() {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-4">
             {t('title')}
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
